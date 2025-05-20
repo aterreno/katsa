@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,11 @@
     "ts-jest": "^29.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.2",
+    "@types/supertest": "^6.0.3",
+    "express": "^5.1.0",
+    "supertest": "^7.1.1"
   }
 }
