@@ -1,9 +1,11 @@
 import express, { Request, Response, Application } from 'express';
+import cors from 'cors';
 import { fizzbuzz } from './fizzbuzz';
 import { isAnagram } from './anagram';
 
 export const app = express();
-const port = process.env.PORT || 3000;
+app.use(cors());
+const port = process.env.PORT || 8080;
 
 app.get('/fizzbuzz', (req: Request, res: Response) => {
   const n = parseInt(req.query.n as string, 10);

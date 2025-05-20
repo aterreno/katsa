@@ -20,8 +20,10 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@types/cors": "^2.8.18",
     "@types/express": "^5.0.2",
     "@types/supertest": "^6.0.3",
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "supertest": "^7.1.1"
   }
